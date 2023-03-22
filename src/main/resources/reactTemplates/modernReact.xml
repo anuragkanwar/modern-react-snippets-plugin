@@ -1,0 +1,1074 @@
+<templateSet group="Modern React">
+  <template name="anfn" value="($name$) =&gt; {&#10;     $END$&#10;}&#10;" description="anonymousFunction" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;params&quot;" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="bnd" value="this.$a$ = this.$a$.bind(this)&#10;" description="bindThis" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="&quot;data&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cas" value="console.assert($a$, $b$)&#10;" description="consoleAssert" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="&quot;a&quot;" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="&quot;b&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="useStateSnippet" value="const [$a$, set$b$] = useState($c$);&#10;" description="useState" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="capitalize(a)" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="useRefSnippet" value="const $a$ = useRef($b$);&#10;" description="useRef" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="useReducerSnippet" value="const [state, dispatch] = useReducer($a$, $b$, $c$);&#10;" description="useReducer" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="useMemoSnippet" value="useMemo(() =&gt; $a$, [$b$]);&#10;" description="useMemo" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="useLayoutEffectSnippet" value="useLayoutEffect(() =&gt; {&#10;  $a$&#10;  return () =&gt; {&#10;    $b$&#10;  };&#10;}, [$c$]);&#10;" description="useLayoutEffect" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="useImperativeHandleSnippet" value="useImperativeHandle(&#10;  $a$,&#10;  () =&gt; {&#10;    $b$&#10;  },&#10;  [$c$],&#10;);&#10;" description="useImperativeHandle" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="useEffectSnippet" value="useEffect(() =&gt; {&#10;  $a$&#10;  return () =&gt; {&#10;    $b$&#10;  }&#10;}, [$c$]);&#10;" description="useEffect" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="useContextSnippet" value="const $a$ = useContext($b$);&#10;" description="useContext" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="useCallbackSnippet" value="useCallback(&#10;  () =&gt; {&#10;    $a$&#10;  },&#10;  [$b$],&#10;);&#10;" description="useCallback" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tsrpce" value="import { PureComponent } from 'react'&#10;type Props = {};&#10;class $a$ extends PureComponent&lt;Props&gt; {&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    );&#10;  };&#10;};&#10;export default $a$;&#10;" description="typescriptReactClassExportPureComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tsrpc" value="import { PureComponent } from 'react'&#10;type Props = {};&#10;export default class $a$ extends PureComponent&lt;Props&gt; {&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    );&#10;  };&#10;};&#10;" description="typescriptReactClassPureComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tsrnfs" value="import { StyleSheet, Text, View } from 'react-native'&#10;type Props = {};&#10;const $a$ = (props: Props) =&gt; {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  );&#10;};&#10;export default $a$;&#10;const styles = StyleSheet.create({});&#10;" description="typescriptReactNativeArrowFunctionComponentWithStyles" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tsrnf" value="import { View, Text } from 'react-native'&#10;type Props = {};&#10;const $a$ = (props: Props) =&gt; {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  );&#10;};&#10;export default $a$;&#10;" description="typescriptReactNativeArrowFunctionComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tsrfce" value="type Props = {};&#10;function $a$({}: Props) {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  );&#10;}&#10;export default $a$;&#10;" description="typescriptReactFunctionalExportComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tsrfc" value="type Props = {};&#10;export default function $a$({}: Props) {&#10;  return (&#10;    &lt;div&gt;${1:first}&lt;/div&gt;&#10;  );&#10;};&#10;" description="typescriptReactFunctionalComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tsrcredux" value="import { connect } from 'react-redux'&#10;import { Component } from 'react'&#10;type Props = {};&#10;type State = {};&#10;export class $a$ extends Component&lt;Props, State&gt; {&#10;  state = {};&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    );&#10;  };&#10;};&#10;const mapStateToProps = (state) =&gt; ({});&#10;const mapDispatchToProps = {};&#10;export default connect(mapStateToProps, mapDispatchToProps)($a$);&#10;" description="typescriptReactClassComponentRedux" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tsrce" value="import { Component } from 'react'&#10;type Props = {};&#10;type State = {};&#10;class $a$ extends Component&lt;Props, State&gt; {&#10;  state = {};&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    );&#10;  };&#10;};&#10;export default $a$;&#10;" description="typescriptReactClassExportComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tsrcc" value="import { Component } from 'react'&#10;type Props = {};&#10;type State = {};&#10;export default class $a$ extends Component&lt;Props, State&gt; {&#10;  state = {};&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    );&#10;  };&#10;};&#10;" description="typescriptReactClassComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tsrafce" value="type Props = {};&#10;const $a$ = (props: Props) =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  );&#10;};&#10;export default $a$;&#10;" description="typescriptReactArrowFunctionExportComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tsrafc" value="type Props = {};&#10;const $a$ = (props: Props) =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  );&#10;};&#10;" description="typescriptReactArrowFunctionComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tpf" value="typeof $a$&#10;" description="typeofSnippet" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tita" value="it('should $a$', async () =&gt; { $a$ })&#10;" description="itAsyncBlock" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tit" value="it('should $a$', () =&gt; { $b$ })&#10;" description="itBlock" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="testa" value="test('should $a$', async () =&gt; { $b$ })&#10;" description="testAsyncBlock" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="test" value="test('should $a$', () =&gt; { $b$ })&#10;" description="testBlock" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="sto" value="setTimeout(() =&gt; { $a$ }, $b$ )&#10;" description="setTimeOut" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="sti" value="setInterval(() =&gt; { $a$ }, $b$ )&#10;" description="setInterval" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="stest" value="import React from 'react'&#10;import renderer from 'react-test-renderer'&#10;import { $a$ } from '../$a$'&#10;describe('&lt;$a$ /&gt;', () =&gt; {&#10;  const defaultProps = {}&#10;  const wrapper = renderer.create(&lt;$a$ {...defaultProps} /&gt;)&#10;  test('render', () =&gt; {&#10;    expect(wrapper).toMatchSnapshot()&#10;  })&#10;})&#10;" description="setupReactTest" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="state" value="this.state.$a$&#10;" description="componentState" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="sst" value="this.setState({$a$})&#10;" description="componentSetStateObject" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ssf" value="this.setState((state, props) =&gt; { return { $a$ }})&#10;" description="componentSetStateFunc" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="srtest" value="import React from 'react'&#10;import renderer from 'react-test-renderer'&#10;import { Provider } from 'react-redux'&#10;import store from '~/store'&#10;import { $a$ } from '../$a$'&#10;describe('&lt;$a$ /&gt;', () =&gt; {&#10;  const defaultProps = {}&#10;  const wrapper = renderer.create(&#10;    &lt;Provider store={store}&gt;&#10;     &lt;$a$ {...defaultProps} /&gt;&#10;    &lt;/Provider&gt;,&#10;  )&#10;  test('render', () =&gt; {&#10;    expect(wrapper).toMatchSnapshot()&#10;  })&#10;})&#10;" description="setupReactComponentTestWithRedux" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="sntest" value="import 'react-native'&#10;import React from 'react'&#10;import renderer from 'react-test-renderer'&#10;import $a$ from '../$a$'&#10;describe('&lt;$a$ /&gt;', () =&gt; {&#10;  const defaultProps = {}&#10;  const wrapper = renderer.create(&lt;$a$ {...defaultProps} /&gt;)&#10;  test('render', () =&gt; {&#10;    expect(wrapper).toMatchSnapshot()&#10;  })&#10;})&#10;" description="setupReactNativeTest" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="snrtest" value="import 'react-native'&#10;import React from 'react'&#10;import renderer from 'react-test-renderer'&#10;import { Provider } from 'react-redux'&#10;import store from '~/store'&#10;import $a$ from '../$a$'&#10;describe('&lt;$a$ /&gt;', () =&gt; {&#10;  const defaultProps = {}&#10;  const wrapper = renderer.create(&#10;    &lt;Provider store={store}&gt;&#10;      &lt;$a$ {...defaultProps} /&gt;&#10;    &lt;/Provider&gt;,&#10;  )&#10;  test('render', () =&gt; {&#10;    expect(wrapper).toMatchSnapshot()&#10;  })&#10;})&#10;" description="setupReactNativeTestWithRedux" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="scu" value="shouldComponentUpdate(nextProps, nextState) { $a$ }&#10;" description="shouldComponentUpdate" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rxslice" value="import { createSlice } from '@reduxjs/toolkit'&#10;const initialState = {&#10;}&#10;const $a$} = createSlice({&#10;  name: $b$,&#10;  initialState,&#10;  reducers: {}&#10;});&#10;export const {} = $a$.actions&#10;export default $a$.reducer&#10;" description="reduxSlice" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rxselect" value="import { createSelector } from 'reselect'&#10;export const $a$ = state =&gt; state.$b$&#10;" description="reduxSelector" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rxreducer" value="const initialState = {}&#10;export default (state = initialState, { type, payload }) =&gt; {&#10;  switch (type) {&#10;  case $a$:&#10;    return { ...state, ...payload }&#10;  default:&#10;    return state&#10;  }&#10;}&#10;" description="reduxReducer" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rxconst" value="export const $a$ = '$a$'&#10;" description="reduxConst" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rxaction" value="export const $a$ = (payload) =&gt; ({&#10;  type: $b$,&#10;  payload&#10;})&#10;" description="reduxAction" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rpcp" value="import PropTypes from 'prop-types'&#10;import React, { PureComponent } from 'react'&#10;export default class $a$ extends PureComponent {&#10;  static propTypes = {}&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;" description="reactClassPureComponentWithPropTypes" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rpce" value="import React, { PureComponent } from 'react'&#10;export class $a$ extends PureComponent {&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;export default $a$&#10;" description="reactClassExportPureComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rpc" value="import React, { PureComponent } from 'react'&#10;export default class $a$ extends PureComponent {&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;" description="reactClassPureComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rnstyle" value="const styles = StyleSheet.create({$a$})&#10;" description="reactNativeStyles" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rnpce" value="import { Text, View } from 'react-native'&#10;import React, { PureComponent } from 'react'&#10;export class $a$ extends PureComponent {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;export default $a$&#10;" description="reactNativePureComponentExport" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rnpc" value="import { Text, View } from 'react-native'&#10;import React, { PureComponent } from 'react'&#10;export default class $a$ extends PureComponent {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;" description="reactNativePureComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rnfs" value="import { StyleSheet, Text, View } from 'react-native'&#10;import React from 'react'&#10;export default function $a$() {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  )&#10;}&#10;const styles = StyleSheet.create({})&#10;" description="reactNativeFunctionalComponentWithStyles" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rnfes" value="import { StyleSheet, Text, View } from 'react-native'&#10;import React from 'react'&#10;const $a$ = () =&gt; {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  )&#10;}&#10;export default $a$&#10;const styles = StyleSheet.create({})&#10;" description="reactNativeFunctionalExportComponentWithStyles" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rnfe" value="import { View, Text } from 'react-native'&#10;import React from 'react'&#10;const $a$ = () =&gt; {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  )&#10;}&#10;export default $a$&#10;" description="reactNativeFunctionalExportComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rnf" value="import { View, Text } from 'react-native'&#10;import React from 'react'&#10;export default function $a$ () {&#10;  return (&#10;    &lt;View&gt;&#10;      &lt;Text&gt;$a$&lt;/Text&gt;&#10;    &lt;/View&gt;&#10;  )&#10;}&#10;" description="reactNativeFunctionalComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rncs" value="import { Text, StyleSheet, View } from 'react-native'&#10;import React, { Component } from 'react'&#10;export default class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;const styles = StyleSheet.create({})&#10;" description="reactNativeComponentWithStyles" toReformat="false" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rnce" value="import { Text, View } from 'react-native'&#10;import React, { Component } from 'react'&#10;export class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;export default $a$&#10;" description="reactNativeComponentExport" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rnc" value="import { Text, View } from 'react-native'&#10;import React, { Component } from 'react'&#10;export default class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;View&gt;&#10;        &lt;Text&gt;$a$&lt;/Text&gt;&#10;      &lt;/View&gt;&#10;    )&#10;  }&#10;}&#10;" description="reactNativeComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rmcp" value="import PropTypes from 'prop-types'&#10;import React, { memo } from 'react'&#10;const $a$ = memo((props) =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;})&#10;$a$.propTypes = {}&#10;export default $a$&#10;" description="reactFunctionMemoComponentWithPropTypes" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rmc" value="import React, { memo } from 'react'&#10;const $a$ = memo(() =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;})&#10;export default $a$&#10;" description="reactFunctionMemoComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rfcreduxp" value="import PropTypes from 'prop-types'&#10;import React from 'react'&#10;import { connect } from 'react-redux'&#10;export const $a$ = (props) =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;$a$.propTypes = {&#10;  $b$: PropTypes.$c$&#10;}&#10;const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;export default connect(mapStateToProps, mapDispatchToProps)($a$)&#10;" description="reactFunctionalComponentReduxPropTypes" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rfcredux" value="import React from 'react'&#10;import { connect } from 'react-redux'&#10;export const $a$ = (props) =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;export default connect(mapStateToProps, mapDispatchToProps)($a$)&#10;" description="reactFunctionalComponentRedux" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rfcp" value="import React from 'react'&#10;import PropTypes from 'prop-types'&#10;function $a$ (props) {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;$a$.propTypes = {}&#10;export default $a$&#10;" description="reactFunctionalComponentWithPropTypes" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rfce" value="import React from 'react'&#10;function $a$() {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;export default $a$&#10;" description="reactFunctionalExportComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rfc" value="import React from 'react'&#10;export default function $a$() {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;" description="reactFunctionalComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="reduxmap" value="const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;" description="mappingToProps" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="redux" value="import { connect } from 'react-redux'&#10;" description="importReduxConnect" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcreduxp" value="import PropTypes from 'prop-types'&#10;import React, { Component } from 'react'&#10;import { connect } from 'react-redux'&#10;export class $a$ extends Component {&#10;  static propTypes = {&#10;    $b$: $c$&#10;  }&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;export default connect(mapStateToProps, mapDispatchToProps)($a$)&#10;" description="reactClassComponentReduxPropTypes" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcredux" value="import React, { Component } from 'react'&#10;import { connect } from 'react-redux'&#10;export class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;const mapStateToProps = (state) =&gt; ({})&#10;const mapDispatchToProps = {}&#10;export default connect(mapStateToProps, mapDispatchToProps)($a$)&#10;" description="reactClassComponentRedux" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcontext" value="const $a$ = React.createContext()&#10;" description="createContext" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rconst" value="constructor(props) {&#10;  super(props)&#10;  this.state = {&#10;     $a$&#10;  }&#10;}&#10;" description="classConstructor" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcep" value="import PropTypes from 'prop-types'&#10;import React, { Component } from 'react'&#10;export class $a$ extends Component {&#10;  static propTypes = {}&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;export default $a$&#10;" description="reactClassExportComponentWithPropTypes" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rce" value="import React, { Component } from 'react'&#10;export class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;export default $a$&#10;" description="reactClassExportComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rccp" value="import PropTypes from 'prop-types'&#10;import React, { Component } from 'react'&#10;export default class $a$ extends Component {&#10;  static propTypes = {$b$: $c$}&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;" description="reactClassComponentPropTypes" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcc" value="import React, { Component } from 'react'&#10;export default class $a$ extends Component {&#10;  render() {&#10;    return (&#10;      &lt;div&gt;$a$&lt;/div&gt;&#10;    )&#10;  }&#10;}&#10;" description="reactClassComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rafcp" value="import React from 'react'&#10;import PropTypes from 'prop-types'&#10;const $a$ = props =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;$a$.propTypes = {}&#10;export default $a$&#10;" description="reactArrowFunctionComponentWithPropTypes" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rafce" value="import React from 'react'&#10;const $a$ = () =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;export default $a$&#10;" description="reactArrowFunctionExportComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rafc" value="import React from 'react'&#10;export const $a$ = () =&gt; {&#10;  return (&#10;    &lt;div&gt;$a$&lt;/div&gt;&#10;  )&#10;}&#10;" description="reactArrowFunctionComponent" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptsr" value="PropTypes.string.isRequired&#10;" description="propTypeStringRequired" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptshr" value="PropTypes.shape({&#10;  $a$&#10;}).isRequired&#10;" description="propTypeShapeRequired" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptsh" value="PropTypes.shape({&#10;  $a$&#10;})&#10;" description="propTypeShape" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="pts" value="PropTypes.string&#10;" description="propTypeString" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptor" value="PropTypes.object.isRequired&#10;" description="propTypeObjectRequired" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptoor" value="PropTypes.objectOf($a$).isRequired&#10;" description="propTypeObjectOfRequired" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptoo" value="PropTypes.objectOf($a$)&#10;" description="propTypeObjectOf" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="pto" value="PropTypes.object&#10;" description="propTypeObject" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptnr" value="PropTypes.number.isRequired&#10;" description="propTypeNumberRequired" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptndr" value="PropTypes.node.isRequired&#10;" description="propTypeNodeRequired" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptnd" value="PropTypes.node&#10;" description="propTypeNode" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptn" value="PropTypes.number&#10;" description="propTypeNumber" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptir" value="PropTypes.instanceOf($a$).isRequired&#10;" description="propTypeInstanceOfRequired" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="pti" value="PropTypes.instanceOf($a$)&#10;" description="propTypeInstanceOf" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptfr" value="PropTypes.func.isRequired&#10;" description="propTypeFuncRequired" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptf" value="PropTypes.func&#10;" description="propTypeFunc" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptexr" value="PropTypes.exact({&#10;  $a$&#10;}).isRequired&#10;" description="propTypeExactRequired" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptex" value="PropTypes.exact({&#10;  $a$&#10;})&#10;" description="propTypeExact" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptetr" value="PropTypes.oneOfType([&#10;  $a$&#10;]).isRequired&#10;" description="propTypeOneOfTypeRequired" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptet" value="PropTypes.oneOfType([&#10;  $a$&#10;])&#10;" description="propTypeOneOfType" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="pter" value="PropTypes.oneOf(['$a$']).isRequired&#10;" description="propTypeEnumRequired" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptelr" value="PropTypes.element.isRequired&#10;" description="propTypeElementRequired" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptel" value="PropTypes.element&#10;" description="propTypeElement" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="pte" value="PropTypes.oneOf(['$a$'])&#10;" description="propTypeEnum" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptbr" value="PropTypes.bool.isRequired&#10;" description="propTypeBoolRequired" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptb" value="PropTypes.bool&#10;" description="propTypeBool" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptar" value="PropTypes.array.isRequired&#10;" description="propTypeArrayRequired" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptaor" value="PropTypes.arrayOf($a$).isRequired&#10;" description="propTypeArrayOfRequired" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptao" value="PropTypes.arrayOf($a$)&#10;" description="propTypeArrayOf" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ptany" value="PropTypes.any&#10;" description="propTypeAny" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="pta" value="PropTypes.array&#10;" description="propTypeArray" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="pse" value="set $a$($b$) {$c$}&#10;" description="propertySet" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="props" value="this.props.$a$&#10;" description="componentProps" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="prom" value="return new Promise((resolve, reject) =&gt; { $a$ })&#10;" description="promise" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="pge" value="get $a$() {&#10;  return this.$b$&#10;}&#10;" description="propertyGet" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="nfn" value="const $a$ = ($b$) =&gt; { $c$ }&#10;" description="namedFunction" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="met" value="$a$ = ($b$) =&gt; {$c$}&#10;" description="method" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imrr" value="import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'&#10;" description="importBrowserRouterWithRouteAndNavLink" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imrpcp" value="import React, { PureComponent } from 'react'&#10;import PropTypes from 'prop-types'&#10;" description="importReactWithPureComponentAndPropTypes" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imrpc" value="import React, { PureComponent } from 'react'&#10;" description="importReactWithPureComponent" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imrn" value="import { $a$ } from 'react-native'&#10;" description="reactNativeImport" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imrmp" value="import React, { memo } from 'react'&#10;import PropTypes from 'prop-types'&#10;" description="importReactWithMemoAndPropTypes" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imrm" value="import React, { memo } from 'react'&#10;" description="importReactWithMemo" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imrd" value="import ReactDOM from 'react-dom'&#10;" description="importReactDom" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imrcp" value="import React, { Component } from 'react'&#10;import PropTypes from 'prop-types'&#10;" description="importReactWithComponentAndPropTypes" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imrc" value="import React, { Component } from 'react'&#10;" description="importReactWithComponent" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imr" value="import React from 'react'&#10;" description="importReact" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="impt" value="import PropTypes from 'prop-types'&#10;" description="importPropTypes" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imp" value="import $b$ from '$a$'&#10;" description="import" toReformat="true" toShortenFQNames="true">
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imn" value="import '$a$'&#10;" description="importNoModuleName" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ime" value="import * as $b$ from '$a$'&#10;" description="importEverything" toReformat="true" toShortenFQNames="true">
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imd" value="import { $b$ } from '$a$'&#10;" description="importDestructing" toReformat="true" toShortenFQNames="true">
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imbrs" value="import { Switch } from 'react-router-dom'&#10;" description="importRouterSwitch" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imbrnl" value="import { NavLink } from 'react-router-dom'&#10;" description="importRouterNavLink" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imbrl" value="import { Link } from 'react-router-dom'&#10;" description="importRouterLink" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imbrc" value="import { Route, Switch, NavLink, Link } from 'react-router-dom'&#10;" description="importRouterSetup" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imbr" value="import { BrowserRouter as Router } from 'react-router-dom'&#10;" description="importBrowserRouter" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ima" value="import { $b$ as $c$ } from '$a$'&#10;" description="importAs" toReformat="true" toShortenFQNames="true">
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="hocredux" value="import React from 'react'&#10;import { connect } from 'react-redux'&#10;import PropTypes from 'prop-types'&#10;export const mapStateToProps = state =&gt; ({})&#10;export const mapDispatchToProps = {}&#10;export const $a$ = (WrappedComponent) =&gt; {&#10;  const hocComponent = ({ ...props }) =&gt; &lt;WrappedComponent {...props} /&gt;&#10;  hocComponent.propTypes = {}&#10;  return hocComponent&#10;}&#10;export default WrapperComponent =&gt; connect(mapStateToProps, mapDispatchToProps)($a$(WrapperComponent))&#10;" description="hocComponentWithRedux" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="hoc" value="import React from 'react'&#10;import PropTypes from 'prop-types'&#10;export default (WrappedComponent) =&gt; {&#10;  const hocComponent = ({ ...props }) =&gt; &lt;WrappedComponent {...props} /&gt;&#10;  hocComponent.propTypes = {}&#10;  return hocComponent&#10;}&#10;" description="hocComponent" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="gsbu" value="getSnapshotBeforeUpdate = (prevProps, prevState) =&gt; {$a$}&#10;" description="getSnapshotBeforeUpdate" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="gdsfp" value="static getDerivedStateFromProps(props, state) {$a$}&#10;" description="getDerivedStateFromProps" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="fre" value="$a$.forEach($b$ =&gt; {$c$})&#10;" description="forEach" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="fof" value="for(let $a$ of $b$) {$c$}&#10;" description="forOf" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="fin" value="for(let $a$ in $b$) {$c$}&#10;" description="forIn" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="exptp" value="export type $a$ = {$b$}&#10;" description="exportType" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="expint" value="export interface $a$ {$b$}&#10;" description="exportInterface" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="exp" value="export default $a$&#10;" description="exportDefault" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="exd" value="export { $b$ } from '$a$'&#10;" description="exportDestructing" toReformat="true" toShortenFQNames="true">
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="exa" value="export { $b$ as $c$ } from '$a$'&#10;" description="exportAs" toReformat="true" toShortenFQNames="true">
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="est" value="state = { $a$ }&#10;" description="emptyState" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="enf" value="export const $a$ = ($b$) =&gt; {$c$}&#10;" description="exportNamedFunction" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ednf" value="export default function $a$ ($b$) { $c$ }&#10;" description="exportDefaultNamedFunction" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="edf" value="export default ($a$) =&gt; { $b$ }&#10;" description="exportDefaultFunction" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="dob" value="const { $b$ } = $a$&#10;" description="destructingObject" toReformat="true" toShortenFQNames="true">
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="desc" value="describe('$a$', () =&gt; { $b$ })&#10;" description="describeBlock" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="dar" value="const [$b$] = $a$&#10;" description="destructingArray" toReformat="true" toShortenFQNames="true">
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cwun" value="componentWillUnmount() { $a$ }&#10;" description="componentWillUnmount" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cwa" value="console.warn($a$)&#10;" description="consoleWarn" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ctr" value="console.trace($a$)&#10;" description="consoleTrace" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ctm" value="console.time('$a$')&#10;" description="consoleTime" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ctl" value="console.table([$a$])&#10;" description="consoleTable" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cte" value="console.timeEnd('$a$')&#10;" description="consoleTimeEnd" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cs" value="const { $a$ } = this.state&#10;" description="destructState" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cref" value="this.$a$Ref = React.createRef()&#10;" description="createRef" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cp" value="const { $a$ } = this.props&#10;" description="destructProps" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cmmb" value="/**&#10; * $END$&#10; */&#10;" description="commentBigBlock" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="clo" value="console.log('$a$', $a$)&#10;" description="consoleLogObject" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="clj" value="console.log('$a$', JSON.stringify($a$, null, 2))&#10;" description="consoleLogJson" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="clg" value="console.log($a$)&#10;" description="consoleLog" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cin" value="console.info($a$)&#10;" description="consoleInfo" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cgr" value="console.group('$a$')&#10;" description="consoleGroup" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cge" value="console.groupEnd()&#10;" description="consoleGroupEnd" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cer" value="console.error($a$)&#10;" description="consoleError" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cdup" value="componentDidUpdate(prevProps, prevState) { $a$ } &#10;" description="componentDidUpdate" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cdm" value="componentDidMount() { $a$ }&#10;" description="componentDidMount" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cdi" value="console.dir($a$)&#10;" description="consoleDir" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cco" value="console.count($a$)&#10;" description="consoleCount" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ccl" value="console.clear()&#10;" description="consoleClear" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

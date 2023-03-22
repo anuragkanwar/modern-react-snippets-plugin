@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# modern-react-snippets-plugin Changelog
+# Modern React Snippets Changelog
 
 ## [Unreleased]
 ### Added
