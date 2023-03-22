@@ -1,5 +1,8 @@
 .gradle
-.idea
+.github
+.idea/*
 .qodana
 build
 keys
+.run
+qodana.yml
