@@ -1,3 +1,5 @@
+
+
 # Modern React Snippets
 
 <!-- Plugin description -->
@@ -11,6 +13,7 @@ Thank you for choosing Modern React Snippets, and happy coding!
 
 Snippets
 --------
+Snippets are available in `.js`, `.jsx`, `.ts`, `.tsx`, and `.html` files.
 
 The **⇥** means the `TAB` key
 
